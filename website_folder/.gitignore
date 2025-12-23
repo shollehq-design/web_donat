@@ -36,3 +36,36 @@ coverage/
 # Temporary files
 .temp/
 tmp/
+
+# Node.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp
+.pnp.js
+.cache/
+
+# Vite
+.vite/
+
+# Package lock files
+.yarn/
+yarn.lock
+pnpm-lock.yaml
+
+# Build cache
+.node_build/
+node_modules/.cache/
+node_modules/.vite/
+
+# Editor
+.vs/
+.settings/
+.project/
+*.tmproj
+nbproject/
+
+# Local development
+.env
+.env.backup
+*.local
