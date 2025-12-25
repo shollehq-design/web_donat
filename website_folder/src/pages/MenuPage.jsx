@@ -4,7 +4,7 @@ import Menu from '../sections/Menu';
 const MenuPage = () => {
   return (
     <div>
-      <Menu />
+      <Menu showAll={true} />
     </div>
   );
 };

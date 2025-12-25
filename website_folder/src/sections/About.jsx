@@ -1,71 +1,72 @@
 import React from 'react';
 
 const About = () => {
+  const features = [
+    { icon: '🍩', title: 'Bahan Premium', desc: 'Bahan pilihan berkualitas tinggi' },
+    { icon: '👨‍🍳', title: 'Resep Rahasia', desc: 'Resep turun-temurun teruji' },
+    { icon: '🧡', title: 'Dibuat dengan Cinta', desc: 'Penuh ketelitian dan cinta' },
+    { icon: '✅', title: 'Terjamin Halal', desc: 'Bersertifikat dan higienis' }
+  ];
+
   return (
-    <section className="py-16 lg:py-20 bg-gradient-to-b from-white to-secondary-50">
+    <section id="about" className="py-16 lg:py-20 bg-white">
       <div className="container mx-auto px-4">
+        {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-800">Tentang Donat Delight</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto text-lg mb-6">
-            Sejak tahun 2010, kami berkomitmen untuk menyajikan donat berkualitas tinggi dengan rasa yang lezat dan kemasan yang menarik.
+          <div className="inline-block bg-primary-100 text-primary-600 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+            🏠 Tentang Kami
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
+            Cerita <span className="text-primary-600">Kafa Donat</span>
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            Berdiri sejak 2010, kami berkomitmen menghadirkan donat berkualitas dengan rasa yang tak terlupakan.
           </p>
-          <div className="w-20 h-1 bg-primary-500 mx-auto rounded-full"></div>
         </div>
-        
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+
+        <div className="flex flex-col lg:flex-row items-center gap-12">
+          {/* Image */}
           <div className="lg:w-2/5">
             <div className="relative">
               <img
-                src="https://placehold.co/600x400?text=Tentang+Donat+Delight"
-                alt="Tentang Donat Delight"
-                className="rounded-xl shadow-2xl w-full border-8 border-white"
+                src="https://placehold.co/500x400?text=Kafa+Donat"
+                alt="Tentang Kafa Donat"
+                className="rounded-2xl shadow-xl w-full"
               />
-              <div className="absolute -bottom-6 -right-6 bg-primary-500 text-white px-6 py-3 rounded-lg shadow-lg">
-                <span className="font-bold">15 Tahun Pengalaman</span>
+              <div className="absolute -bottom-4 -right-4 bg-primary-600 text-white px-6 py-3 rounded-xl shadow-lg font-bold">
+                15+ Tahun Pengalaman
               </div>
             </div>
           </div>
-          
-         <div className="lg:w-3/5">
-           <h3 className="text-2xl lg:text-3xl font-bold mb-6 text-gray-800">Menghadirkan Kebahagiaan dengan Setiap Gigitan</h3>
-           <p className="text-gray-60 mb-6 text-base lg:text-lg leading-relaxed">
-             Donat Delight adalah brand donat yang telah hadir sejak tahun 2010. Kami berkomitmen untuk menyajikan donat berkualitas tinggi dengan rasa yang lezat dan kemasan yang menarik.
-           </p>
-           <p className="text-gray-600 mb-8 text-base lg:text-lg leading-relaxed">
-             Setiap donat kami dibuat dengan bahan-bahan alami, tanpa penggunaan bahan kimia sintetis. Kami menggunakan resep turun-temurun yang telah teruji dan disukai oleh banyak orang.
-           </p>
-           
-           <div className="card p-6">
-             <h4 className="text-xl lg:text-2xl font-bold mb-4 text-gray-800">Visi & Misi</h4>
-             <div className="space-y-4">
-               <div className="flex items-start">
-                 <div className="bg-primary-100 p-2 rounded-full mr-4 mt-1">
-                   <svg className="w-5 h-5 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                   </svg>
-                 </div>
-                 <div>
-                   <h5 className="font-bold text-gray-800 text-lg">Visi</h5>
-                   <p className="text-gray-600 text-base">Menjadi brand donat terdepan di Indonesia dengan memberikan produk berkualitas tinggi dan layanan terbaik.</p>
-                 </div>
-               </div>
-               <div className="flex items-start">
-                 <div className="bg-primary-100 p-2 rounded-full mr-4 mt-1">
-                   <svg className="w-5 h-5 text-primary-60" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                   </svg>
-                 </div>
-                 <div>
-                   <h5 className="font-bold text-gray-800 text-lg">Misi</h5>
-                   <p className="text-gray-600 text-base">Menghadirkan kebahagiaan melalui rasa donat yang lezat, menjaga kualitas produk, serta membangun komunitas pelanggan yang loyal.</p>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </section>
+
+          {/* Content */}
+          <div className="lg:w-3/5">
+            <h3 className="text-2xl font-bold mb-6 text-gray-800">
+              Menghadirkan Kebahagiaan dengan Setiap Gigitan
+            </h3>
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              Kafa Donat hadir dengan satu misi sederhana: membuat hari Anda lebih manis. Berawal dari dapur rumah di Kediri, kini kami telah menjadi pilihan favorit pecinta donat.
+            </p>
+            <p className="text-gray-600 mb-8 leading-relaxed">
+              Setiap donat dibuat dengan bahan pilihan, tanpa pengawet, dan dengan resep rahasia turun-temurun. Kualitas adalah segalanya bagi kami.
+            </p>
+
+            {/* Features */}
+            <div className="grid grid-cols-2 gap-4">
+              {features.map((feature, index) => (
+                <div key={index} className="flex items-start gap-3 p-4 bg-gray-50 rounded-xl">
+                  <span className="text-2xl">{feature.icon}</span>
+                  <div>
+                    <h4 className="font-bold text-gray-800">{feature.title}</h4>
+                    <p className="text-sm text-gray-500">{feature.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
